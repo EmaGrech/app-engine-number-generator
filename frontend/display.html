@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Random Number Generator Results</title>
+</head>
+<body>
+    <h1>Random Number Generator Results</h1>
+    <table>
+        <thead>
+                <th>Instance</th>
+                <th>Total Numbers</th>
+                <th>Largest</th>
+                <th>Smallest</th>
+        </thead>
+        <tbody>
+            {% for instance in data.instances %}
+                <td>{{ instance.instance }}</td>
+                <td>{{ instance.count }}</td>
+                <td>{{ instance.max }}</td>
+                <td>{{ instance.min }}</td>
+
+            {% endfor %}
+        </tbody>
+    </table>
+</body>
+</html>
