@@ -5,7 +5,7 @@ app = Flask(__name__)
 
 @app.route('/')
 def index():
-    response = requests.get('http://api-service-url/results')
+    response = requests.get('https://numGen-dot-fifth-glazing-422823-j5.appspot.com/results')
     data = response.json()
     return render_template('display.html', data=data)
 
